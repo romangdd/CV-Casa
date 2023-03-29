@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#grid-principal {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 1.25rem 1.25rem;
+}
+
+#cabecera {
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 33% auto 30%;
+    grid-template-rows: auto;
+
+    align-items: center;
+}
+
+hr{
+    grid-row: 2;
+
+    width: 100%;
+    height: .1rem;
+
+    background-color: #00B4DB;
+}
+
+#foto-container {
+    display: flex;
+    justify-content: start;
+
+    grid-row: 1/6;
+    grid-column: 2;
+}
+
+#datos {
+    grid-column: 1/2;
+}
+
+#nombre {
+    grid-row: 1/2;
+}
+
+#titulacion {
+    grid-row: 2/3;
+
+    color: #00B4DB;
+}
+
+#foto {
+    width: 10rem;
+
+    border-radius: 50%;
+    border: solid #00B4DB 4px;
+}
+
+
+#contacto {
+    grid-row: 1/6;
+    grid-column: 3/4;
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenedor-contacto p {
+    margin: 0;
+    padding-right: 1rem;
+
+    width: 100%;
+    height: 1.25rem;
+
+    text-align: end;
+}
+
+#contenedor-organizaciones p, .lenguaje{
+    margin: 0;
+    margin-bottom: .6rem;
+}
+
+#nombre,
+#titulacion,
+#descripcion,
+.ubicacion p {
+    margin: 0;
+}
+
+
+#descripcion {
+    grid-row: 3/6;
+
+    margin-top: .5rem;
+}
+
+.logo-contacto {
+    width: 1.25rem;
+    height: auto;
+}
+
+
+
+#cuerpo {
+    grid-row: 3;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2em;
+
+    align-items: start;
+    justify-content: center;
+}
+
+.col-1 {
+    grid-column: 1/2;
+}
+
+.col-2 {
+    grid-column: 2/3;
+
+    margin-left: 2rem;
+}
+
+#col-1, #col-2{
+    display: flex;
+    flex-direction: column;
+ }
+
+.lenguaje {
+    display: flex;
+}
+
+.lenguaje p,
+.skill p {
+    margin: 0;
+    width: 10rem;
+}
+
+.valoracion {
+    padding-left: .4rem;
+    width: .75rem;
+    height: .75rem;
+}
+
+.logo-redirigir {
+    padding-left: .4rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+h3,
+h2 {
+    margin: 0;
+}
+
+.titulo-referencia {
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+.referencia {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+
+ul li::before {
+    content: "• ";
+    color: #00B4DB;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: .6rem;
+}
+
+.ubicacion p,
+#contenedor-formaciones p {
+    color: #00B4DB;
+}
+
+#marca-agua {
+    grid-row: 4;
+    display: flex;
+
+    justify-content: end;
+}
+
+#marca-agua h2 {
+    margin: 0;
+    margin-left: 1.25rem;
+    color: #00B4DB;
+}
+
+.ubicacion {
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+
+    font-style: italic;
+}
+
+h2 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#experiencias>h3 {
+    margin-top: 1rem;
+}
+
+#contenedor-formaciones p {
+    font-style: italic;
+
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+}
+
+#contenedor-formaciones {
+    margin-top: 1rem;
+}
+
+#contenedor-premios .premio :nth-child(2){
+    font-size: 70%;
+    font-style: italic;
+    color: gray;
+}
+
+#contenedor-premios .premio :nth-child(1){
+    margin: 0;
+}
+
+#contenedor-premios .premio :nth-child(2){
+    margin-top: 0;
+}
+
+#cabecera, #cuerpo, #marca-agua{
+    margin-top: 1.50rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    
+
+}
+
+@media screen and (max-width: 992px){
+    #cabecera {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cuerpo {
+        display:block;
+    }
+
+    #contacto {
+        margin-top: 1rem;
+
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    .contenedor-contacto {
+        width: 14rem;
+    }
+
+    .contenedor-contacto p {
+        text-align: start;
+    }
+
+    #foto-container{
+        width: 15rem;
+        display: flex;
+        justify-content: start;
+        grid-column: 1;
+    }
+
+    .skill {
+        display: flex;
+        justify-content:start;
+    }
+
+    .skill p {
+        width: 14rem;
+    }
+}

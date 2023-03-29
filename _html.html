@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio en JS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="_css.css">
+</head>
+
+<body>
+    <div id="grid-principal">
+        <section id="cabecera">
+            <div id="datos">
+                <h1 id="nombre">
+                    JohnDoe
+                </h1>
+                <h2 id="titulacion">
+                    Buissines Development Manager
+                </h2>
+                <p id="descripcion">Professional buisness developper whith more thanvfive years of experience in the
+                    buisiness development process. Involed in product testing, managment, and development of new
+                    buisiness
+                    opportunities</p>
+            </div>
+            <div id="foto-container">
+                <img id="foto" src="./Recursos/foto-cara.avif">
+            </div>
+            <div id="contacto">
+                <div class="contenedor-contacto">
+                    <p id="email">jhom@gmail.com</p>
+                    <img id="logo-email" class="logo-contacto" src="./Recursos/correo.png">
+                </div>
+                <div class="contenedor-contacto">
+                    <p id="telefono">619-45-32-32</p>
+                    <img id="logo-telefono" class="logo-contacto" src="./Recursos/telefono-movil.png">
+                </div>
+                <div class="contenedor-contacto">
+                    <p id="ubicacion">New York, USA</p>
+                    <img id="logo-ubicacion" class="logo-contacto" src="./Recursos/mapa.png">
+                </div>
+                <div class="contenedor-contacto">
+                    <p id="linkedin">linkedin.com/in/jhon.doe</p>
+                    <img id="logo-linkedin" class="logo-contacto" src="./Recursos/linkedin.png">
+                </div>
+                <div class="contenedor-contacto">
+                    <p id="skype">jhom.doe</p>
+                    <img id="logo-skype" class="logo-contacto" src="./Recursos/skype.png">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="cuerpo">
+            <div id="col-1">
+                <div id="experiencias">
+                    <h2>WORK EXPERIENCE</h2>
+                    <work-experience-list data></work-experience-list>
+                </div><!--[{"puesto":"Buisiness Development Manager","empresa":"AirState Solutions","fechas":"09/2014-06/2017","ubicacion":"New York, USA","contenidos":["Succesfully managed $2-3 millon budget projects and sucessfully achived the project scheduled goals.","Developed and implemented new marketing and sales plans ahd defined the strategy for the next 5 years.","Reviewed constantly the customer feedback and then suggested ways to improve the processes and customer service levels which incresed the satsfaction rate from 81% tu 95%.","Ensured that new clients will grow into a loyal customer base in a specialist niche market by implementing a new loyalty program."]},{"puesto":"Buisiness Development Assistant","empresa":"AirState Solutions","fechas":"09/2012-06/2014","ubicacion":"New York, USA","contenidos":["Incresed the customer satisfaction rate by 25% by improving the customer service.","Planned, supervised and coordineted dialy activity oj junior buisiness analysts.","Inproved the communication with the Marketing department to better undestand the comparative position.","Directed the creation and implementation of a Buisiness Continuity Plan, and managment the audit programs."]}]-->
+                <div id="contenedor-formaciones">
+                    <h2>EDUCATION</h2>
+
+                </div>
+                <div id="contenedor-lenguajes">
+                    <h2>LENGUAJES</h2>
+
+                </div>
+            </div>
+            <div id="col-2">
+                <div id="contenedor-skills">
+                    <h2>SKILLS</h2>
+
+                </div>
+                <div id="contenedor-organizaciones">
+                    <h2>ORGANIZATIONS</h2>
+                </div>
+                <div id="contenedor-premios">
+                    <h2>HONOURS AND AWARDS</h2>
+                </div>
+            </div>
+        </section>
+        <div id="marca-agua">
+            <img src="./Recursos/logo-empresa.png" alt="logo empresa">
+            <h2>novoresume.com</h2>
+        </div>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.5.js"></script>
+    <script src="./Components/work-experience/_js.js"></script>
+    <script src="./_js.js"></script>
+</body>
+
+</html>
